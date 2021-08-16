@@ -1,0 +1,38 @@
+:root { /* root is used here for global variables*/
+    --grid-cols: 1;
+    --grid-rows: 1;
+    
+  }
+  
+  #container {
+    display: grid; /* this is where the css grid begins*/
+    grid-gap: 0em;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+  }
+  
+  .grid-item { /* this is what each grid cell looks like*/
+    padding: 1em;
+    border: 1px solid #ddd;
+    text-align: center;
+    //background-color: #979797;
+    transition:all 0.2s;
+  }
+  
+  .grid-item:hover {
+    background-color: yellow;
+    
+  }
+
+  .colored-item:hover {
+    background-color: yellow;
+  }
+
+  .colored-item {
+    background-color: gray;
+    border: 1px solid black;
+    padding: 1em;
+    border: 1px solid #ddd;
+    text-align: center;
+    transition:all 0.2s;
+  }
